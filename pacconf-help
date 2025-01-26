@@ -1,0 +1,29 @@
+#!/bin/bash
+
+PACCONFHELPLIST=(
+"tour
+
+welcome"
+)
+
+if [ -z ${1+x} ]; then
+echo "Please enter a title after 'pacconf-help'"
+echo "To list all, type 'pacconf-help list' or 'pacconf-help search (search query)' "
+exit
+fi
+
+if [ "$1" == "list" ]; then
+echo $PACCONFHELPLIST
+exit
+fi
+
+if [ "$1" == "search" ]; then
+pacconf-help list | grep $2
+exit
+fi 
+
+if [ "$1" == "tour" ]; then
+echo "Welcome to pacconf and here is a quick tour."
+exit
+fi
+

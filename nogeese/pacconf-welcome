@@ -1,0 +1,4 @@
+clear
+echo "Welcome to pacconf!"
+echo "A simple bash script for editing your pacman config."
+echo "Take a tour by running 'pacconf-help tour'"

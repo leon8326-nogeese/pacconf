@@ -1,0 +1,9 @@
+#!/usr/bin/sudo bash
+
+# Please configure this script in /etc/pacconf.conf or by simply running 'pacconf-setup'
+
+
+source /etc/pacconf.conf
+$PACCONFROOT $PACCONFEDITOR /etc/pacman.conf
+
+
