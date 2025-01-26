@@ -1,0 +1,2 @@
+# pacconf
+Pacman Configuration Tool
