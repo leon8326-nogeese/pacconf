@@ -11,4 +11,4 @@ INFOINSTALLERENABLE=true
 INFOPACKAGEENABLE=false
 
 # Sources
-INFOINSTALLERSOURCE=https://raw.githubusercontent.com/leon8326-nogeese/pacconf/installer/runthis.sh
+INFOINSTALLERSOURCE=https://raw.githubusercontent.com/leon8326-nogeese/pacconf/main/installer.sh
