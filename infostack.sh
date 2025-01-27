@@ -1,5 +1,5 @@
-#!/bin/bash
+#infostack
 
 INFOTYPE=software
 INFOSOFTWARENAME=pacconf
-INFOLATESTVERSION=beta1
+INFOLATESTVERSION=beta1q
