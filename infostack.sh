@@ -22,6 +22,6 @@ INFOREPOSOURCE=https://raw.githubusercontent.com/leon8326-nogeese/pacconf/main/i
 DEPENDENCIESENABLE=true
 DEPENDENCIES=(
 
-"manual:Please install infostack from https://github.com/leon8326-nogeese/InfoKit/"
+"manual:Please make sure you have InfoKit installed before installing, if you do not cancel this installation and refer to the installation manual of InfoKit: https://github.com/leon8326-nogeese/InfoKit/blob/main/INSTALL.md"
 
 )
