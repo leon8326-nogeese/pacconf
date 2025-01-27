@@ -1,6 +1,6 @@
-# infostack
+# InfoStack Source
 
 # Basic info
 INFOTYPE=software
 INFOSOFTWARENAME=pacconf
-INFOLATESTVERSION=beta1
+INFOLATESTVERSION=0.1
