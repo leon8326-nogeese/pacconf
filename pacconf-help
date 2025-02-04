@@ -1,29 +1,30 @@
 #!/bin/bash
 
 PACCONFHELPLIST=(
-"tour
-
-welcome"
+    "tour"
+    "welcome"
 )
 
-if [ -z ${1+x} ]; then
-echo "Please enter a title after 'pacconf-help'"
-echo "To list all, type 'pacconf-help list' or 'pacconf-help search (search query)' "
-exit
+if [ -z "$1" ]; then
+    echo "Please enter a title after 'pacconf-help'"
+    echo "To list all, type 'pacconf-help list' or 'pacconf-help search (search query)'"
+    exit 1
 fi
 
 if [ "$1" == "list" ]; then
-echo $PACCONFHELPLIST
-exit
+    printf "%s\n" "${PACCONFHELPLIST[@]}"
+    exit 0
 fi
 
 if [ "$1" == "search" ]; then
-pacconf-help list | grep $2
-exit
+    printf "%s\n" "${PACCONFHELPLIST[@]}" | grep -E "${2:-.*}"
+    exit 0
 fi 
 
 if [ "$1" == "tour" ]; then
-echo "Welcome to pacconf and here is a quick tour."
-exit
+    echo "Welcome to pacconf and here is a quick tour."
+    exit 0
 fi
 
+echo "Error: '$1' not found in pacconf-help."
+exit 1
