@@ -1,4 +1,4 @@
 # pacconf
-Pacman Configuration Tool. Alternative to pacman-conf.
+Pacman Configuration Tool.
 
 Latest version: 0.1
